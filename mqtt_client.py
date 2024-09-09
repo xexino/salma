@@ -19,7 +19,7 @@ def on_disconnect(client, userdata, rc):
 client = mqtt.Client()
 
 # TLS settings - bypassing certificate verification (use only for testing)
-client.tls_insecure_set(True)
+client.tls_insecure_set(False)
 
 # Set the callback functions
 client.on_connect = on_connect

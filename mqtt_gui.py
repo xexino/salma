@@ -74,7 +74,7 @@ class MQTTApp:
                 cert_reqs=ssl.CERT_REQUIRED
             )
             # configuration du paramètre TLS pour vérifier les certif  
-            self.client.tls_insecure_set(True)  
+            self.client.tls_insecure_set(False)  
             # se connecter au broker 
             self.client.connect(broker_address, port, 60) 
             # commencer une boucle d'écoute 
